@@ -20,6 +20,4 @@ app.get('/', (req, res) => {
 app.use('/users', usersRoute)
 
 // Server Listening
-app.listen(PORT, () => {
-  console.log(`Server listening at http://localhost:${PORT} ...`)
-})
+app.listen(PORT)
