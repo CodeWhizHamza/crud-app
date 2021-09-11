@@ -8,13 +8,6 @@ const User = require('../models/User')
 // Use enviornment variables
 require('dotenv').config()
 
-// Connection with DB
-const connectionString =
-  process.env.DB_CONNECTION_STRING ||
-  `mongodb://localhost/${process.env.DB_NAME}`
-
-mongoose.connect('mongodb://localhost/CRUD_DB')
-
 /*
  *
  * Request types
